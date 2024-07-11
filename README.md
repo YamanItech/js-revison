@@ -85,5 +85,10 @@ console.log(typeof(greet)); // Output: function
    2. Can hold different datatypes
    3. syntax ={}
 ### Array
+  
 1. Ordered collections of values
+ ```javascript
+ let a=[1,2,3,4]
+ let b=["Ishwor","Yaman","nabin"]
+ ```
 2. syntax =[]
