@@ -50,6 +50,8 @@ console.log(a); // Output: 1n
 // 2) Non-primitive Data Types
 // Objects, Arrays, and Functions
 
+
+
 // Example of an Object
 let person = {
     firstName: "Ishwor",
@@ -67,3 +69,21 @@ function greet() {
     console.log("Hello, world!");
 }
 console.log(typeof(greet)); // Output: function
+
+
+```
+## Difference between Object and Array
+### Object 
+  1. Key value paires
+   ```javascript
+    let a={
+        "key":"value",
+        "key":"value",
+        "key":"value"
+    }
+   ```
+   2. Can hold different datatypes
+   3. syntax ={}
+### Array
+1. Ordered collections of values
+2. syntax =[]

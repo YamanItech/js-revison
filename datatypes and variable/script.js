@@ -56,3 +56,25 @@ console.log(a);
 
 
 //2. Non-primitive datatypes =>Objects, Arrays and Functions
+// Example of an Object
+/*
+let person = {
+    firstName: "Ishwor",
+    lastName: "Acharya",
+    age: 30
+};
+
+console.log(typeof(person)); // Output: object
+*/
+// Example of an Array
+/*
+let numbers = [1, 2, 3, 4, 5];
+console.log(typeof(numbers)); // Output: object
+*/
+// Example of a Function
+/*
+function greet() {
+    console.log("Hello, world!");
+}
+console.log(typeof(greet)); // Output: function
+*/
