@@ -2,10 +2,10 @@
 
 This document provides an overview of the different data types in JavaScript and demonstrates how to work with them.
 
-```javascript
+
 console.log("hello world");
 
- Data Types and Variables
+ ## Data Types and Variables
 var names = "ishwor acharya";
 console.log(names);
 
