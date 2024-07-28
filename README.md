@@ -8,63 +8,72 @@ console.log("hello world");
 // Data Types and Variables
 var names = "ishwor acharya";
 console.log(names);
-
-// JavaScript Data Types
+```
+## JavaScript Data Types
 // There are two types of data types in JavaScript: 
-// 1. Primitive 
-// 2. Non-primitive
 
-// 1) Primitive Data Types
+
+1. Primitive Data Types
 // String, Number, BigInt, Boolean, Null, Undefined, and Symbol
 
-// Integer
+ a.  Integer
+```javascript
 let a = 1;
 console.log(typeof(a)); // Output: number
-
-// String
+```
+ b.  String
+ ```javascript
 let a = "ishwor";
 console.log(typeof(a)); // Output: string
-
-// Boolean
+```
+c. Boolean
+```javascript
 let a = true;
 console.log(typeof(a)); // Output: boolean
-
-// Undefined
+```
+d. Undefined
+``` javascript
 let a;
 console.log(typeof(a)); // Output: undefined
-
-// Null (In JavaScript, null represents "nothing", but its datatype is an object)
+```
+e.  Null (In JavaScript, null represents "nothing", but its datatype is an object)
+``` javascript
 let a = null;
 console.log(typeof(a)); // Output: object
-
-// Symbol (It means unique, even if the datatypes and the values are the same, if used symbol it differs from each other)
+```
+f. Symbol (It means unique, even if the datatypes and the values are the same, if used symbol it differs from each other)
+```javascript
 let a, b;
 a = "ishwor";
 b = Symbol("ishwor");
 console.log(a == b); // Output: false
-
-// BigInt (Prints more digits than an integer => 16 digits)
+```
+g. BigInt (Prints more digits than an integer => 16 digits)
+``` javascript
 let a = BigInt(1);
 console.log(a); // Output: 1n
-
-// 2) Non-primitive Data Types
+```
+2.  Non-primitive Data Types
 // Objects, Arrays, and Functions
 
 
 
-// Example of an Object
+a.  Example of an Object
+``` javascript
 let person = {
     firstName: "Ishwor",
     lastName: "Acharya",
     age: 30
 };
 console.log(typeof(person)); // Output: object
-
-// Example of an Array
+```
+b.  Example of an Array
+``` javascript
 let numbers = [1, 2, 3, 4, 5];
 console.log(typeof(numbers)); // Output: object
-
-// Example of a Function
+```
+c.  Example of a Function 
+``` javascript
 function greet() {
     console.log("Hello, world!");
 }
@@ -125,8 +134,8 @@ console.log(a);
 ```
 
 # Scoping (Block scoping and global scoping )
-Block scoping =>run only inside the condition 
-Global scoping => globally run until reassign 
+1. Block scoping =>run only inside the condition 
+2. Global scoping => globally run until reassign 
 
 ### var (global scoping )
 /*
