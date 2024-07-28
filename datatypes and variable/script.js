@@ -1,7 +1,7 @@
-console.log("hello world")
+// console.log("hello world")
 //data types variables
-var names="ishwor acharya"
-console.log(names);
+// var names="ishwor acharya"
+// // console.log(names);
 //data types (2 type of  datatypes) => 1. primitive & 2. 
 // 1) primitive datatypes
 // String, Number, BigInt, Boolean, Null, Undefined, and Symbol
@@ -78,3 +78,49 @@ function greet() {
 }
 console.log(typeof(greet)); // Output: function
 */
+
+
+//var, let , const
+//var (redeclaration and reassign)
+/*
+var name="Ishwor"
+console.log(name);
+name="";
+var name="kajal";
+console.log(name);
+
+*/
+//let (no redeclaration but reassign )
+/*
+let name="Ishwor";
+ name=2;
+ console.log(name);
+ */
+//const (no redeclaration and reassign)
+/*
+const a=2;
+a=3;//not possible
+console.log(a);
+*/
+
+// Scoping (Block scoping and global scoping )
+//Block scoping =>run only inside the condition 
+//Global scoping => globally run until reassign 
+
+//var (global scoping )
+/*
+var a=2;
+if(true){
+    var a=3;
+    console.log(a);
+}
+console.log(a);
+*/
+//let and const (block scoping)
+let a=2;
+if(true){
+    let a=3;
+    console.log(a);
+}
+console.log(a);
+

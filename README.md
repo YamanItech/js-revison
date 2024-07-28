@@ -92,3 +92,59 @@ console.log(typeof(greet)); // Output: function
  let b=["Ishwor","Yaman","nabin"]
  ```
 2. syntax =[]
+
+
+
+# var, let , const
+## var (redeclaration and reassign)
+/*
+```javascript
+var name="Ishwor"
+console.log(name);
+name="";
+var name="kajal";
+console.log(name);
+
+*/
+```
+## let (no redeclaration but reassign )
+/*
+``` javascript
+let name="Ishwor";
+ name=2;
+ console.log(name);
+ */
+```
+
+## const (no redeclaration and reassign)
+
+```javascript
+const a=2;
+a=3;//not possible
+console.log(a);
+```
+
+# Scoping (Block scoping and global scoping )
+## Block scoping =>run only inside the condition 
+## Global scoping => globally run until reassign 
+
+### var (global scoping )
+/*
+``` javascript
+var a=2;
+if(true){
+    var a=3;
+    console.log(a);
+}
+console.log(a);
+*/
+```
+### let and const (block scoping)
+``` javascript
+let a=2;
+if(true){
+    let a=3;
+    console.log(a);
+}
+console.log(a);
+
