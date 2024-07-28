@@ -125,8 +125,8 @@ console.log(a);
 ```
 
 # Scoping (Block scoping and global scoping )
-## Block scoping =>run only inside the condition 
-## Global scoping => globally run until reassign 
+Block scoping =>run only inside the condition 
+Global scoping => globally run until reassign 
 
 ### var (global scoping )
 /*
