@@ -1,7 +1,5 @@
 # JavaScript Data Types and Variables
 
-This document provides an overview of the different data types in JavaScript and demonstrates how to work with them.
-
 ```javascript
 console.log("hello world");
 
@@ -104,8 +102,8 @@ console.log(typeof(greet)); // Output: function
 
 
 
-# var, let , const
-## var (redeclaration and reassign)
+##  var, let , const
+### var (redeclaration and reassign)
 /*
 ```javascript
 var name="Ishwor"
@@ -116,7 +114,7 @@ console.log(name);
 
 */
 ```
-## let (no redeclaration but reassign )
+### let (no redeclaration but reassign )
 /*
 ``` javascript
 let name="Ishwor";
@@ -125,7 +123,7 @@ let name="Ishwor";
  */
 ```
 
-## const (no redeclaration and reassign)
+### const (no redeclaration and reassign)
 
 ```javascript
 const a=2;
@@ -133,7 +131,7 @@ a=3;//not possible
 console.log(a);
 ```
 
-# Scoping (Block scoping and global scoping )
+## Scoping (Block scoping and global scoping )
 1. Block scoping =>run only inside the condition 
 2. Global scoping => globally run until reassign 
 
@@ -143,9 +141,9 @@ console.log(a);
 var a=2;
 if(true){
     var a=3;
-    console.log(a);
+    console.log(a);// Output: 3
 }
-console.log(a);
+console.log(a);// Output: 3
 */
 ```
 ### let and const (block scoping)
@@ -153,7 +151,7 @@ console.log(a);
 let a=2;
 if(true){
     let a=3;
-    console.log(a);
+    console.log(a);// Output: 3
 }
-console.log(a);
+console.log(a);// Output: 2
 

@@ -117,10 +117,11 @@ if(true){
 console.log(a);
 */
 //let and const (block scoping)
+/*
 let a=2;
 if(true){
     let a=3;
     console.log(a);
 }
 console.log(a);
-
+*/
