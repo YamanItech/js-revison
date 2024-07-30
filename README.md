@@ -458,3 +458,65 @@ let c=(a,b)=>a*b;
 console.log(c(1,3));
 ``` 
 */
+
+ # Datatypes conversion confusion
+ * 
+``` javascript
+let score ="33"
+console.log(typeof score);
+let valueInteger=Number(score);
+console.log(typeof valueInteger);
+```
+
+``` javascript
+let score="22abc"
+console.log(typeof score);//string
+let valueInteger=Number(score);
+console.log(typeof valueInteger);//number 
+console.log(valueInteger);//NaN
+
+```
+``` javascript
+let a=true;
+console.log(typeof a);//boolean
+let number=Number(a);
+console.log(typeof number);//number
+console.log(number);//1
+```
+
+conclusion
+``` javascript
+"33"=>33
+"33abc"=>NaN
+true=>1
+false=>0
+```
+
+``` javascript
+let a=0;
+let boolean=Boolean(a);
+console.log(typeof boolean);//boolean;
+console.log(boolean);//false
+
+``` 
+``` javascript
+let a="";
+let boolean=Boolean(a);
+console.log(typeof boolean);//boolean;
+console.log(boolean);//false
+```
+
+``` javascript
+let a="ishowr";
+let boolean=Boolean(a);
+console.log(typeof boolean);//boolean;
+console.log(boolean);//true
+
+```
+
+conclusion
+``` javascript
+1=>true;0=>false
+""=>false;
+"ishwor"=>true;
+```
