@@ -386,8 +386,9 @@ for (let a=0;a<5;a++){
     }
     console.log("loop no:",a)
 }
-```
+
     */
+   ```
 
  //result 
  /*
@@ -397,5 +398,5 @@ loop no: 2
 Loop is at 3
 */
 
-
+## Difference between for, while and do while loop 
 ![alt text](image.png)
