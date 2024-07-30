@@ -400,3 +400,61 @@ Loop is at 3
 
 ## Difference between for, while and do while loop 
 ![alt text](image.png)
+
+# function
+//syntax
+/*
+``` javascript
+function name(parameter1, parameter2, parameter3) {
+    // code to be executed
+  }
+  ```
+*/
+//Example1
+
+
+/*
+``` javascript
+function hello(){//function declaration 
+    console.log("welcome");
+}
+hello();//function calling 
+*/
+```
+//Example2
+/*
+``` javascript
+function sum(a,b){// a,b is parameter of the funciton 
+    console.log("The sum is :",a+b);
+
+}
+sum(2,3); // 2,3 is argument of the function    
+*/
+```
+
+## arrow function 
+// example1
+/*
+``` javascript
+let a=()=>{
+    console.log("hello");
+}
+a();
+``` 
+*/
+//example2
+/*
+``` javascript
+let b=(num1,num2)=>{
+console.log("sum is :",num1+num2);
+}
+b(2,3);
+*/
+``` 
+//example3
+/*
+``` javascript
+let c=(a,b)=>a*b;
+console.log(c(1,3));
+``` 
+*/
