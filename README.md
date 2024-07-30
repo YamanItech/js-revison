@@ -460,14 +460,14 @@ console.log(c(1,3));
 */
 
  # Datatypes conversion confusion
- * 
+ /***************************/
 ``` javascript
 let score ="33"
 console.log(typeof score);
 let valueInteger=Number(score);
 console.log(typeof valueInteger);
 ```
-
+/***************************/
 ``` javascript
 let score="22abc"
 console.log(typeof score);//string
@@ -476,6 +476,7 @@ console.log(typeof valueInteger);//number
 console.log(valueInteger);//NaN
 
 ```
+/***************************/
 ``` javascript
 let a=true;
 console.log(typeof a);//boolean
@@ -491,21 +492,22 @@ conclusion
 true=>1
 false=>0
 ```
-
+/***************************/
 ``` javascript
 let a=0;
 let boolean=Boolean(a);
 console.log(typeof boolean);//boolean;
 console.log(boolean);//false
 
-``` 
+```
+/***************************/ 
 ``` javascript
 let a="";
 let boolean=Boolean(a);
 console.log(typeof boolean);//boolean;
 console.log(boolean);//false
 ```
-
+/***************************/
 ``` javascript
 let a="ishowr";
 let boolean=Boolean(a);
@@ -520,3 +522,16 @@ conclusion
 ""=>false;
 "ishwor"=>true;
 ```
+
+## String to number conversion confusion
+``` javascript
+let a="hello";
+let b=" world";
+console.log(a+b);
+console.log("1"+2);//12
+console.log(1+"2");//12
+console.log("1"+2+2);//122
+console.log(1+2+"2");//32
+let num1,num2,num3;
+num1=num2=num3=2+2;
+

@@ -58,3 +58,17 @@ console.log(boolean);//true
 ""=>false;
 "ishwor"=>true;
 */
+/*********************************************************************************************************************** */
+//String to number conversion confusion
+/*
+let a="hello";
+let b=" world";
+console.log(a+b);
+console.log("1"+2);//12
+console.log(1+"2");//12
+console.log("1"+2+2);//122
+console.log(1+2+"2");//32
+let num1,num2,num3;
+num1=num2=num3=2+2;
+
+*/
