@@ -575,5 +575,3 @@ console.log(array)
  console.log("final original array ",array);
 
 ```
-output
-![alt text](image-2.png);
