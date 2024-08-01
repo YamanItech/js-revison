@@ -336,7 +336,7 @@ let c=0;
  }while(c<10)
  */
 ```
- ## extra concept 
+ ## extra concept(High Order Array loops )
  ### * for of 
  /*
  ``` javascript
@@ -535,14 +535,14 @@ console.log(1+2+"2");//32
 ```
 # Array
 
-//different way of writing array
+Different way of writing array
 
  1. 
-/*
+
 ```javascript
 let array=['a','e','i','o','u'];
 ```
-*/
+
 2. 
 /*
 ```javascript
@@ -573,5 +573,60 @@ console.log(array)
  let splice=array.splice(1,3); //return array from index 1 to 3 ; // add also deletes the values of that index in original array
  console.log("splice ",splice);
  console.log("final original array ",array);
+ ![alt text](image-1.png);
 
 ```
+## sort,reverse,join,
+``` javascript
+let array=["Ishowr","Kishwor","Amm"];
+console.log(array.sort());// sort Aa-Zz
+console.log(array.reverse());//sort Zz-Aa
+console.log(array.join('_'));
+console.log(array.concat("hello"));
+```
+![alt text](image-2.png)
+
+# High order function (foreach)
+``` javascript
+let books=["Math","Nepali","English"]
+books.forEach((book)=>{
+ console.log(book);
+})
+```
+# High Order Array Methods
+1. filter
+``` javascript
+const num=[1,2,3,4,5,6,7,8];
+let filterNum=num.filter((num)=>(num>3));
+console.log(filterNum);//[ 4, 5, 6, 7, 8 ]
+filterNum=num.filter((num)=>{
+    return num>3 && num!=5
+})
+console.log(filterNum);
+```
+2. Map
+``` javascript
+const num=[1,2,3,4,5,6,7,8];
+const filterNum=num.map((num)=>num+2) ;
+console.log(filterNum);//[3, 4, 5,  6 ,7, 8, 9, 10]
+```
+3. Reduce
+``` javascript
+const a=[1,2,3,4];
+const total=a.reduce((accumulator,currentvalue)=>{
+    return accumulator+currentvalue;
+},0);
+console.log(total);
+```
+
+ ## chaining 
+``` javascript
+const num=[1,2,3,4,5,6,7,8];
+const filterNum=num
+          .map((num)=>num+2)
+          .filter((num)=> num>=10)
+console.log(filterNum);//[10]
+
+```
+### Example of Map,filter,reduce
+![alt text](image-3.png)

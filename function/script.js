@@ -42,3 +42,10 @@ b(2,3);
 let c=(a,b)=>a*b;
 console.log(c(1,3));
 */
+
+// # High order function (foreach)
+
+let books=["Math","Nepali","English"]
+books.forEach((book)=>{
+ console.log(book);
+})
