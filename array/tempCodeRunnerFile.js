@@ -1,0 +1,1 @@
+console.log(array.includes(0));// check whether the element is included in the array 
