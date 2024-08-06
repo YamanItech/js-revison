@@ -630,3 +630,54 @@ console.log(filterNum);//[10]
 ```
 ### Example of Map,filter,reduce
 ![alt text](image-3.png)
+
+
+# Memory in JavaScript
+
+## Stack (Stores Primitive Data)
+Primitive data types in JavaScript are stored in the stack. When a variable is assigned a primitive value, the value itself is stored directly in the variable.
+
+```javascript
+let name = "Ishwor";
+let dupliName = name;
+
+console.log(dupliName); // Ishwor
+
+dupliName = "Yaman";
+
+console.log(name); // Ishwor
+console.log(dupliName); // Yaman
+```
+
+---
+ In this example, the value of dupliName is a copy of the value in name. Changing dupliName does not affect the value of name because they are stored separately in the stack.
+
+## Heap (Stores Non-Primitive Data)
+Non-primitive data types, such as objects and arrays, are stored in the heap. When a variable is assigned a non-primitive value, it stores a reference to the location in the heap where the value is stored.
+
+```javascript
+let emp1 = {
+    name: "Ishwor",
+    age: 22
+};
+
+let emp2 = emp1;
+
+// Before modification
+console.log(emp2.age); // 22
+console.log(emp1.age); // 22
+
+emp2.age = 28;
+
+// After modification
+console.log(emp2.age); // 28
+console.log(emp1.age); // 28
+```
+
+---
+In this example, emp2 is assigned the reference to the object stored in emp1. Both emp1 and emp2 point to the same object in the heap. Changing the age property using emp2 also affects emp1 because they reference the same object.
+
+
+> Conclusion
+Primitive data types are stored in the stack. Assigning a variable to another variable copies the value.
+Non-primitive data types are stored in the heap. Assigning a variable to another variable copies the reference to the value, not the value itself.
